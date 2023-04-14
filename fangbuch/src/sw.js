@@ -21,3 +21,15 @@ registerRoute(
     ],
   }),
 );
+
+self.addEventListener('install', event => {
+  console.log('Installing service worker...');
+  event.waitUntil(self.skipWaiting());
+});
+
+self.addEventListener('activate', event => {
+  console.log('Activating service worker...');
+  event.waitUntil(self.clients.claim());
+});
+
+export { precacheAndRoute };
