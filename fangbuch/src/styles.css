@@ -29,13 +29,32 @@
     margin: 70px auto 0 auto;
     padding: 20px;
   }
-  
-  .hamburger {
-    display: block;
+
+  .bm-burger-button {
     position: absolute;
-    top: 0;
+    width: 30px;
+    height: 24px;
     left: 10px;
-    font-size: 30px;
-    line-height: 50px;
-    cursor: pointer;
+    top: 10px;
+  }
+  
+  .bm-burger-bars {
+    background: #ffffff;
+  }
+  
+  .bm-menu {
+    background: #58D3F7;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  .bm-menu a {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
   }

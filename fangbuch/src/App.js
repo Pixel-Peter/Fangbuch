@@ -1,15 +1,30 @@
 import React, { Component } from 'react';
+import { slide as Menu } from 'react-burger-menu';
 import './App.css';
 import './styles.css';
 
 
 class HomePage extends Component {
+  showSettings(event) {
+    event.preventDefault();
+  }
+
   render() {
     return (
       <div>
-        {/* Header-Bar mit H1-Block */}
+        {/* Header-Bar mit H1-Block und Hamburger-Menü */}
         <div className="header-bar">
-          <span class="hamburger">&#9776;</span>
+          <Menu left>
+            <a className="menu-item" href="/">
+              Home
+            </a>
+            <a className="menu-item" href="/about">
+              About
+            </a>
+            <a className="menu-item" href="/contact">
+              Contact
+            </a>
+          </Menu>
           <h1>Willkommen auf meiner PWA</h1>
         </div>
 
