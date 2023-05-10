@@ -9,6 +9,7 @@ class HomePage extends Component {
       <div>
         {/* Header-Bar mit H1-Block */}
         <div className="header-bar">
+          <span class="hamburger">&#9776;</span>
           <h1>Willkommen auf meiner PWA</h1>
         </div>
 
